@@ -21,7 +21,10 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.25.0\
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose -v
 
-echo "---------------- permission to root and Reboot----------------"
+echo "----------------Permission to root----------------"
 ls -al /var/run/docker.sock
 sudo usermod -a -G docker $USER
 sudo reboot
+
+
+echo "----------------Reboot Server, Please reconnect----------------"
